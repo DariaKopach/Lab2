@@ -117,9 +117,13 @@ public class Main {
 
         //6. Comparison of two type of sugar eg. which price are higher
 
+        // get the total price of packed sugar
+
         int packedSugar = sugar.stream().filter(item ->
                 item instanceof PackedSugar)
                 .mapToInt(IPrice::getPrice).sum();
+
+        // get the total price of weight sugar
 
         int weightSugar = sugar.stream().filter(item ->
                 item instanceof WeightSugar)
