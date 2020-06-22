@@ -94,7 +94,7 @@ public class Main {
         sugar.add(sugar4);
         sugar.add(sugar5);
 
-        // 2. Calculate the total sum of sugar.
+        // 2. Calculate the total price of sugar.
 
         int totalPrice = sugar.stream().mapToInt(IPrice::getPrice).sum();
 
@@ -139,8 +139,7 @@ public class Main {
                 +  " \n Total price is " + totalPrice + " UAH. "
                 + " \n The cheapest sugar is " + theCheapestSugar
                 + ". \n The most expensive sugar is " + theMostExpensiveSugar
-                + ". \n The average price of sugar is " + averagePrice + " UAH"
-                + ".");
+                + ". \n The average price of sugar is " + averagePrice + " UAH");
 
 
 
