@@ -66,6 +66,7 @@ public class Main {
     public static void main(String[] args) {
 
         //1. Create two appropriate classes and 5 objects of each one.
+        // from all receipts
 
         PackedSugar sugarBeet = new PackedSugar("Star", 30);
         PackedSugar sugarTree = new PackedSugar("sugarTree", 70);
@@ -94,36 +95,36 @@ public class Main {
         sugar.add(sugar4);
         sugar.add(sugar5);
 
-        // 2. Calculate the total price of sugar.
+        // 2. Calculate the total price of bought sugar.
 
         int totalPrice = sugar.stream().mapToInt(IPrice::getPrice).sum();
 
-        // 3. Find the most expensive sugar.
+        // 3. Find the most expensive sugar in the receipt.
 
         IPrice theMostExpensiveSugar = sugar.stream()
                 .max(Comparator.comparingInt(IPrice::getPrice))
                 .orElse(null);
 
-        // 4. Find the cheapest sugar.
+        // 4. Find the cheapest sugar in the receipt.
 
         IPrice theCheapestSugar = sugar.stream()
                 .min(Comparator.comparingInt(IPrice::getPrice))
                 .orElse(null);
 
-        // 5.  The average price of all sugar.
+        // 5.  The average price of all bought sugar.
 
         double averagePrice = sugar.stream().mapToInt(IPrice::getPrice)
                 .average().orElse(0);
 
         //6. Comparison of two type of sugar eg. which price are higher
 
-        // get the total price of packed sugar
+        // get the total price of bought packed sugar
 
         int packedSugar = sugar.stream().filter(item ->
                 item instanceof PackedSugar)
                 .mapToInt(IPrice::getPrice).sum();
 
-        // get the total price of weight sugar
+        // get the total price of bought weight sugar
 
         int weightSugar = sugar.stream().filter(item ->
                 item instanceof WeightSugar)
@@ -140,10 +141,10 @@ public class Main {
         // Final Conclusion
 
         System.out.println(" In a store exist " + sugar.size() + " sugar types."
-                +  " \n Total price is " + totalPrice + " UAH. "
-                + " \n The cheapest sugar is " + theCheapestSugar
-                + ". \n The most expensive sugar is " + theMostExpensiveSugar
-                + ". \n The average price of sugar is " + averagePrice + " UAH");
+                +  " \n Total price in all receipts is " + totalPrice + " UAH. "
+                + " \n The cheapest sugar in receipt is " + theCheapestSugar
+                + ". \n The most expensive sugar in receipt is " + theMostExpensiveSugar
+                + ". \n The average price of sugar in receipt is " + averagePrice + " UAH");
 
 
 
