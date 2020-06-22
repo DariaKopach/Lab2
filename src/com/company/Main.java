@@ -146,5 +146,6 @@ public class Main {
                 + ". \n The most expensive sugar in receipt is " + theMostExpensiveSugar
                 + ". \n The average price of sugar in receipt is " + averagePrice + " UAH");
 
+
     }
 }
