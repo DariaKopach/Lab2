@@ -111,7 +111,8 @@ public class WeightSugar implements IPrice {
         return "Weight Sugar " +
                 " with name '" + name + '\'' +
                 ", its weight = " + weightInKg + " kg" +
-                ", price for kg = " + priceForKg + " UAH.";
+                ", price for kg = " + priceForKg + " UAH."
+                + "The total amount = " + getPrice() + " UAH.";
     }
 
     /**

@@ -74,11 +74,11 @@ public class Main {
         PackedSugar sugarPl = new PackedSugar("sugarPl", 36);
         PackedSugar sugarUa = new PackedSugar("sugarUa", 41);
 
-        WeightSugar sugar1 = new WeightSugar("Sugar1",1,21);
-        WeightSugar sugar2 = new WeightSugar("Sugar2",2,20);
-        WeightSugar sugar3 = new WeightSugar("Sugar3",3,19);
-        WeightSugar sugar4 = new WeightSugar("Sugar4",4,18);
-        WeightSugar sugar5 = new WeightSugar("Sugar5",5,16);
+        WeightSugar sugar1 = new WeightSugar("Sugar1",1.3,21);
+        WeightSugar sugar2 = new WeightSugar("Sugar2",2.1,20);
+        WeightSugar sugar3 = new WeightSugar("Sugar3",3.2,19);
+        WeightSugar sugar4 = new WeightSugar("Sugar4",4.1,18);
+        WeightSugar sugar5 = new WeightSugar("Sugar5",5.5,16);
 
         //Creation a list which consist 10 elements indicated above
 
