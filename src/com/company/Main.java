@@ -135,7 +135,7 @@ public class Main {
                     " than weight sugar.");
         }else{
             System.out.println(" Packed sugar are less expensive" +
-                    " than weight sugar.");
+                    " than weight sugar. ");
         }
 
         // Final Conclusion
